@@ -1,0 +1,61 @@
+.container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px; 
+  min-height: 100vh;
+  transition: background-color 0.4s;
+}
+
+.headingAndToggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ................Dark Mode................. */
+
+.dark-mode .main-container{
+  background-color: black;
+  color: white;
+  
+}
+
+.dark-mode .yellow-card{
+  background-color: rgb(82, 82, 82);
+  color: white;
+}
+
+.dark-mode .yellow-card .edit-btn{
+  color: white;
+}
+
+.dark-mode .green-card{
+  background-color: rgb(137, 137, 137);
+}
+
+.dark-mode .green-card textarea, .dark-mode .green-card p{
+  color: white;
+}
+
+.dark-mode .green-card textarea::placeholder{
+  color: white;
+}
+
+.dark-mode .searchBar-container{
+  background-color: black;
+}
+
+.dark-mode .searchBar-container input{
+  color: white;
+}
+
+.dark-mode .searchBar-container input::placeholder{
+  color: white;
+}

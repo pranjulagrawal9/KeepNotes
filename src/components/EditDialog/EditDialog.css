@@ -1,0 +1,65 @@
+.edit-dialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #cccccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+.edit-dialog textarea{
+    border-style: none;
+    outline: none;
+    resize: none;
+    background-color: rgba(0, 128, 0, 0);
+    margin-bottom: 10px;
+}
+
+.dialog-btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-btn-box button{
+    border-radius: 10px;
+    padding: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.dialog-btn-box button:active{
+    scale: 0.8;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(8px);
+    /* background-color: #cccccc; */
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+  }
+
+.show-modal{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.close-btn{
+    align-self: flex-end;
+    font-size: 1.5em;
+    cursor: pointer;
+}

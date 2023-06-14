@@ -1,0 +1,60 @@
+.green-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(23, 209, 23, 0.435);
+    gap: 10px;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 0.2s;
+}
+
+.green-card textarea{
+    border-style: none;
+    outline: none;
+    resize: none;
+    background-color: rgba(0, 128, 0, 0);
+    transition-duration: 1s;
+}
+
+.green-card textarea::placeholder{
+  transition: 1s;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-box p{
+  transition-duration: 1s;
+}
+
+.btn-box button{
+    border-radius: 10px;
+    padding: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-box button:active{
+  scale: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
